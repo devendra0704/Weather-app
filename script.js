@@ -11,7 +11,7 @@ app.use(express.static('public'));
 const port=5000;
 
 app.get('/',(req,res)=>{
-    res.sendFile(__dirname+"/public/css/index.html")
+    res.sendFile(__dirname+"/public/index.html")
 
 })
 
@@ -30,7 +30,7 @@ app.post('/',(req,res)=>{
             // res.write("description :"+description)
             // res.write("<image src="+icon+">")
             // res.send()
-            fs.readFile(__dirname + '/public/css/weather.html', 'utf8', (err, html) => {
+            fs.readFile(__dirname + '/public/weather.html', 'utf8', (err, html) => {
                 if (err) {
                     res.status(500).send("Error loading the page");
                     return;
