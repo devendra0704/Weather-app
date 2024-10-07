@@ -15,6 +15,7 @@ app.get('/',(req,res)=>{
 
 })
 
+
 app.post('/',(req,res)=>{
     console.log("all working")
        const location=req.body.cityname
